@@ -206,15 +206,11 @@
 <p class="footer__copy">&#169; <span id="currentYear"></span> eco360ke. All rights reserved.</p>
 
 <script>
-  // Get the current year and set it to the span element
-  document.getElementById('currentYear').textContent = new Date().getFullYear();
+  // Ensure the script runs after the DOM is fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  });
 </script>
-        </footer>
 
-        <!--========== SCROLL REVEAL ==========-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
     </body>
 </html>
