@@ -143,22 +143,6 @@
                 </div>
             </section>
 
-            <!--===== APP =======-->
-            <section class="app section bd-container">
-                <div class="app__container bd-grid">
-                    <div class="app__data">
-                        <span class="section-subtitle app__initial">App</span>
-                        <h2 class="section-title app__initial">App is aviable</h2>
-                        <p class="app__description">Find our application and download it for much more.</p>
-                        <div class="app__stores">
-                            <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
-                            <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
-                        </div>
-                    </div>
-
-                    <img src="assets/img/Logo1.png" alt="" class="app__img">
-                </div>
-            </section>
 
             <!--========== CONTACT US ==========-->
             <section class="contact section bd-container" id="contact">
@@ -219,7 +203,12 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; 2024 eco360ke. All right reserved</p>
+<p class="footer__copy">&#169; <span id="currentYear"></span> eco360ke. All rights reserved.</p>
+
+<script>
+  // Get the current year and set it to the span element
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
         </footer>
 
         <!--========== SCROLL REVEAL ==========-->
